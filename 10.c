@@ -1,18 +1,15 @@
-#include<stdio.h>
-#include<math.h>
-#include<conio.h>
+#include <stdio.h>
+#include <math.h>
 
-int main(){
+int main() {
 
-int n,fact=1;
-printf("Enter a Number :");
-scanf("%d", &n);
+    int n;
+    printf("Enter the times : ");
+    scanf("%d", &n);
+    
+    for(int i = 0; i < n; i++){
+       printf("FARHIN \n");
+    }
 
-
-for(int i=1;    i<=n;   i++){
-    fact=fact*i;
+    return 0;
 }
-printf("fact=%d",fact);
-return 0;
-}
-

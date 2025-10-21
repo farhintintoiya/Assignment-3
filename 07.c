@@ -1,23 +1,26 @@
-#include<stdio.h>
-#include<math.h>
-#include<conio.h>
+#include <stdio.h>
+#include <math.h>
 
-int main(){
-
-int n;
-printf("Enter a Number :");
-scanf("%d", &n);
-
-
-int sum =   0;
-for(int i = 1;  i   <=  n;  i++){
-        sum += i;
-
+int even(int);
+int even(int n){
+    if(n < 2){
+        return 0;
+    } else {
+        return even(n-2)+n;
+    }
 }
 
-printf("the sum of the first %d natural numbers is %d", n,  sum);
+int main() {
 
-return 0;
+    int x;
+    printf("Enter the number : ");
+    scanf("%d", &x);
+
+    if(x % 2 != 0){
+         x = x - 1;
+    }
+    printf("The sum of %d numbers is : %d", x, even(x));
+               
+
+    return 0;
 }
-
-

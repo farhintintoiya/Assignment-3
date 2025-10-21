@@ -1,19 +1,24 @@
-#include<stdio.h>
-#include<math.h>
-#include<conio.h>
+#include <stdio.h>
+#include <math.h>
 
-int main(){
-
-int n;
-printf("Enter a Number :");
-scanf("%d", &n);
-
-for(int i = 1; i <= n; i++){
-    printf("%d \n", 2*i);
+int odd(int);
+int odd(int n){
+    if(n == 1){
+      return 1;
+    } else {
+        return odd(n-2)+n;
+    }
 }
+int main() {
 
+      int x;
+      printf("Enter the number : ");
+      scanf("%d", &x);
+      if(x % 2 == 0){
+           x = x - 1;
+      }
+      
+      printf("The sum : %d", odd(x));
 
-return 0;
+    return 0;
 }
-
-

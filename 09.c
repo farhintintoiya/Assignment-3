@@ -1,22 +1,11 @@
-#include<stdio.h>
-#include<math.h>
-#include<conio.h>
+#include <stdio.h>
+#include <math.h>
 
-int main(){
+int main() {
 
-int n;
-printf("Enter a Number :");
-scanf("%d", &n);
+        for(int i = 0; i < 5; i++){
+            printf("Farhin \n");
+        }       
 
-
-int sum =   0;
-for(int i = 1;  i   <=  n;  i++){
-        sum += (2*i);
-
+    return 0;
 }
-
-printf("the sum of the first %d natural numbers is %d", n,  sum);
-
-return 0;
-}
-

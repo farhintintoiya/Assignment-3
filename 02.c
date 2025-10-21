@@ -1,13 +1,14 @@
-#include<stdio.h>
-#include<math.h>
-#include<conio.h>
+#include <stdio.h>
+#include <math.h>
 
-int main(){
+int main() {
 
-for(int i = 1; i <= 10; i++){
-    printf("%d \n", (2*i-1));
-}
+    int n;
+    printf("Enter the number : ");
+    scanf("%d", &n);
+    for(int i = 1; i <= n; i++){
+         printf("%d ", i);
+    }                 
 
-
-return 0;
+    return 0;
 }

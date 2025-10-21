@@ -1,24 +1,21 @@
-#include<stdio.h>
-#include<math.h>
-#include<conio.h>
+#include <stdio.h>
+#include <math.h>
 
-int main(){
-
-int n;
-printf("Enter a Number :");
-scanf("%d", &n);
-
-
-int sum =   0;
-for(int i = 1;  i   <=  n;  i++){
-        sum += (2*i-1);
-
+int fact(int);
+int fact(int n){
+    if(n == 0 || n == 1){
+         return 1;
+    } else {
+        return fact(n-1)*n;
+    }
 }
+int main() {
 
-printf("the sum of the first %d natural numbers is %d", n,  sum);
+        int x;
+        printf("Enter the number : ");
+        scanf("%d", &x);  
+        
+        printf("The factorial : %d", fact(x));
 
-return 0;
+    return 0;
 }
-
-
-
